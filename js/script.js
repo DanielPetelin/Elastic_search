@@ -8,6 +8,7 @@ document.querySelector('#elastic').oninput = function () {
             }
             else {
                 elem.classList.remove('hide');
+                var str = elem.innerText;
             }
         });
     } else {
@@ -15,4 +16,11 @@ document.querySelector('#elastic').oninput = function () {
             elem.classList.remove('hide');
         });
     }
+}
+
+function inserMark (string, pos, len) {
+    //lol
+    //l<mark>o</mark>l
+    //l+<mark>+o+</mark>+l
+    return string.slice(0, pos) + '<mark>' + string.slice(pos, pos + len) + '</mark>' + string.slice(pos + len);
 }
