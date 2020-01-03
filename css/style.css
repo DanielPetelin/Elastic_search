@@ -9,10 +9,6 @@ body {
     margin: 40px 0px;
 }
 
-.elastic li {
-    transition: all ease 500ms;
-}
-
 .elastic li.hide {
     display: none;
 }
